@@ -1,0 +1,103 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+    <title>Text Imput</title>
+</head>
+<body>
+    <P><form action="http://www.example.com/login.php">
+    <p>Username:
+        <input type="text" name="username" size="15" maxlength="30" />
+    </p>
+    <p>Password:
+        <input type="password" name="password" size="15" maxlength="30" />
+    </p>
+</form>
+<P><form action="http://www.example.com/comments.php">
+    <p>¿Que te parecio este trabajo?</p>
+    <textarea name="comments" cols="20" rows="4">Ingrese sus comentarios...</textarea>
+</form></P>
+<P><form action="http://www.example.com/profile.php">
+    <p>Por favor, seleccione su genero de musica favorito:
+    <br />
+    <input type="radio" name="genre" value="rock" checked="checked" /> Rock
+    <input type="radio" name="genre" value="pop" /> Pop
+    <input type="radio" name="genre" value="jazz" /> Jazz
+    </p>
+</form></P>
+<P>
+<form action="http://www.example.com/profile.php">
+    <p>Por favor, seleccione sus servicios de musica favoritos:
+    <br />
+    <input type="checkbox" name="service" value="itunes" checked="checked" /> Itunes
+    <input type="checkbox" name="service" value="deezer" /> Deezer
+    <input type="checkbox" name="service" value="spotify" /> Spotify
+    </p>
+</form>
+<P><form action="http://www.example.com/profile.php">
+    <p>¿En que dispositivo escuchas musica?</p> 
+    <select name="devices">
+        <option value="ipod">Ipod</option>
+        <option value="radio">Radio</option>
+        <option value="computer">Computer</option>
+    </select>
+</form></P>
+<P>
+    <form action="http://www.example.com/profile.php">
+        <p>¿Tocas alguno de los siguientes instrumentos?
+            (Puede seleccionar mas de una opcion manteniendo 
+            presionada la tecla control)</p> 
+        <select name="instruments" size="3" multiple="multiple">
+            <option value="guitar" selected="selected">Guitar</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard" selected="selected">Keyboard</option>
+            <option value="BASS">Bass</option>        
+        </select>
+    </form>
+</P>
+<P><form action="http://www.example.com/upload.php" method="post">
+    <p>Sube tu cancion en formato MP3</p> 
+    <input type="file" name="user-song" /><br />
+    <input type="submit" value="Upload" /><br />   
+</form></P>
+<P><form action="http://www.example.com/subscribe.php">
+    <p>Suscribete a nuestra lista de correo electronico:</p> 
+    <input type="text" name="email" />
+    <input type="submit" name="subscribe" value="subscribe" />   
+</form></P>
+<P><form action="http://www.example.com/subscribe.php">
+    <p>Suscribete a nuestra lista de correo electronico:</p> 
+    <input type="text" name="email" />
+    <input type="image" src="images/suscribe.jpg" width="100" height="2D" />   
+</form></P>
+<P><form action="http://www.example.com/subscribe.php">
+    <label>Edad: <input type="text" name="age" /></label>
+    <br />
+    Genero:
+    <input id="female" type="radio" name="gender" value="f">
+    <label for="female">Female</label>
+    <input id="male" type="radio" name="gender" value="m">
+    <label for="male">Male</label>
+ </form>
+</P>
+<P><form action="http://www.example.com/subscribe.php">
+    <fieldset>
+        <legend>Datos de contacto</legend>
+   <label>Email:<br /><input type="text" name="email" /></label><br />
+   <label>Telefono movil:<br /><input type="text" name="mobile" /></label><br />
+   <label>Telefono fijo<br /><input type="text" name="telephone" /></label><br />
+    </fieldset>
+  </form></P>
+  <P><form action="http://www.example.com/login/" method="post">
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required="required" /></label><br />
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required="required" /></label><br />
+   <input type="submit" value="submit" />
+   </form></P>
+   <P><form action="http://www.example.com/bookings/" method="post">
+    <label for="username">Fecha de salida:</label>
+    <input type="date" name="depart" />
+    <input type="submit" value="submit" />
+   </form></P>
+</body>
+</html>

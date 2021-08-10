@@ -1,0 +1,49 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+<P><form action="http://www.example.com/login/" method="post">
+    <fieldset>
+        <legend>Sus Datos:</legend>
+    <label for="username">Nombre: </label>
+    <input type="text" name="nombre" id="nombre" required="required" /></label><br />
+    <label for="password">Email: </label>
+    <input type="text" name="nombre" id="nombre" required="required" /></label><br />
+</fieldset>
+   </form></P>
+   <P><form action="http://www.example.com/profile.php">
+    <fieldset>
+        <legend>Su opinion:</legend>
+    <p>¿Como se enteraron de nosotros? 
+    <select name="Question">
+        <option value="Google">Goolgle</option>
+        <option value="Publicidad">Publicidad</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Television">Tv</option>
+    </select></p>
+</form></P>
+<P><form action="http://www.example.com/profile.php">
+    <p>¿volveria a visitarnos?
+    <br />
+    <input type="radio" name="question" value="si" checked="checked" /> Si
+    <input type="radio" name="question" value="no" /> No
+    <input type="radio" name="question" value="quizas" /> Quizas
+    </p>
+</form></P>
+<P><form action="http://www.example.com/comments.php">
+    <p>Comentarios:<br />
+        <textarea name="comments" cols="40" rows="6">Ingrese sus comentarios...</textarea>
+    </p> 
+    </form></P>
+    <p>
+    <form action="http://www.example.com/profile.php">
+        <input type="checkbox" name="service" value="question" checked="checked" /> 
+        Inscribete para actualizaciones por correo electronico<br />
+        <input type="submit" value="submit review" />
+         </p>
+    </form>
+    </p>
+</body>
+</html>
